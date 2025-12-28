@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Assignment 2: Backend API Integration</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Weather & City Info Dashboard</h1>
+
+    <section class="card">
+      <h2>Weather & News by City</h2>
+      <form id="cityForm">
+        <label>
+          City:
+          <input type="text" id="cityInput" placeholder="Almaty" required />
+        </label>
+        <button type="submit">Get Info</button>
+      </form>
+
+      <div id="weatherResult" class="result-block"></div>
+      <div id="newsResult" class="result-block"></div>
+    </section>
+
+    <section class="card">
+      <h2>Country Information</h2>
+      <form id="countryForm">
+        <label>
+          Country:
+          <input type="text" id="countryInput" placeholder="Kazakhstan" required />
+        </label>
+        <button type="submit">Get Country Info</button>
+      </form>
+
+      <div id="countryResult" class="result-block"></div>
+    </section>
+
+    <div id="globalError" class="error"></div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
